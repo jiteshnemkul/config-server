@@ -10,6 +10,7 @@ eureka:
 
 spring:
   jpa:
+    generate-ddl:true
     hibernate:
       ddl-auto: update
     show-sql: true
@@ -18,3 +19,4 @@ spring:
       username: postgres
       password: postgres
       initialization-mode: always
+    
