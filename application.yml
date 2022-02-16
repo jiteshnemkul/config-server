@@ -1,3 +1,15 @@
+jpa:
+   properties.hibernate.dialect : org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    datasource:
+      url: jdbc:postgresql://localhost:5432/dreamproject
+      username: postgres
+      password: postgres
+      initialization-mode: always 
+
+
 eureka:
   client:
     register-with-eureka: true
@@ -19,13 +31,4 @@ rabbitmq:
           multiplier: 2
     host: 127.0.0.1
     port: 5672
-  jpa:
-   properties.hibernate.dialect : org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    datasource:
-      url: jdbc:postgresql://localhost:5432/dreamproject
-      username: postgres
-      password: postgres
-      initialization-mode: always   
+    
