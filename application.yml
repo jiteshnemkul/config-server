@@ -8,7 +8,7 @@ eureka:
     hostname: localhost
 
 
-  rabbitmq:
+rabbitmq:
     listener:
       simple:
         retry:
