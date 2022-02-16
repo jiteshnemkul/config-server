@@ -9,6 +9,17 @@ eureka:
 
 
 spring:
+  rabbitmq:
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 5s
+          max-attempts: 6
+          max-interval: 10s
+          multiplier: 2
+    host: 127.0.0.1
+    port: 5672
   jpa:
    properties.hibernate.dialect : org.hibernate.dialect.PostgreSQLDialect
     hibernate:
